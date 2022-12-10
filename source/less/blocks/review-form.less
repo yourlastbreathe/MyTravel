@@ -1,0 +1,131 @@
+.review-form__label {
+  text-transform: uppercase;
+  text-align: left;
+  color: #333333;
+  margin-left: 15px;
+}
+
+.review-form__input {
+  font-family: "PT Sans", "Arial", sans-serif;
+  width: 280px;
+  background-color: #f2f2f2;
+  padding: 16px 100px 16px 16px;
+  box-sizing: border-box;
+  border: none;
+  font-size: 18px;
+  line-height: 26px;
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  &::placeholder {
+    color: #000000;
+  }
+}
+
+.review-form__input--patronymic,
+.review-form__input--email {
+  margin-bottom: 0;
+}
+
+.review-form__fieldset {
+  .fieldset();
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review-form__fieldset--introducing {
+  padding-bottom: 39px;
+}
+
+.review-form__fieldset--contacts {
+  padding-bottom: 35px;
+}
+
+.review-form__input--email,
+.review-form__input--phone {
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.review-form__input--phone {
+  background-image: url(../img/phone.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.review-form__input--email {
+  background-image: url(../img/letter.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.review-form__title {
+  .form-title();
+  margin-bottom: 22px;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+}
+
+.review-form__box {
+  position: relative;
+  text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .review-form__wrapper {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    margin-bottom: 48px;
+  }
+
+  .review-form__fieldset {
+    border: none;
+  }
+
+  .review-form__fieldset--introducing {
+    padding-bottom: 0;
+  }
+
+  .review-form__fieldset--contacts {
+    border-left: 1px solid #e5e5e5;
+    padding-bottom: 109px;
+  }
+
+  .review-form__fieldset--contacts .review-form__box {
+    margin-left: 44px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review-form__wrapper {
+    display: grid;
+    grid-template-columns: 494px 467px;
+    margin-bottom: 71px;
+  }
+
+  .review-form__input--first-name,.review-form__input--surname, .review-form__input--patronymic {
+    width: 430px;
+  }
+
+  .review-form__input--phone, .review-form__input--email {
+    width: 402px;
+  }
+
+  .review-form__fieldset--contacts {
+    padding-bottom: 95px;
+  }
+
+  .review-form__fieldset--contacts .review-form__box {
+    margin-left: 64px;
+  }
+}

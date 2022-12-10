@@ -1,0 +1,152 @@
+.photo {
+  margin-bottom: 19px;
+}
+
+.photo__picture {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+
+.photo__title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.photo__description {
+  margin: 0;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.photo__likes-number {
+  font-weight: 700;
+  margin: 0;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.photo__wrapper {
+  padding: 24px 20px;
+  text-align: start;
+  border-top: solid 1px #e5e5e5;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.photo__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.photo__likes-button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  opacity: 0.3;
+}
+
+.photo__box-likes {
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .photo {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 59px;
+  }
+
+  .photo__image {
+    margin-bottom: 0;
+  }
+
+  .photo__description {
+    margin: 0;
+  }
+
+  .photo__box {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 20px 15px;
+  }
+
+  .photo__box-likes {
+    display: flex;
+    align-items: center;
+  }
+
+  .photo__likes-number {
+    margin-left: 10px;
+  }
+
+  .photo__wrapper--spaces {
+    grid-column: 1 / -1;
+  }
+
+  .photo__wrapper {
+    background-color: #f2f2f2;
+    padding: 0;
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+
+  .photo__box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #f2f2f2;
+    padding: 22px 20px 15px 21px;
+    box-sizing: border-box;
+  }
+
+  .photo__likes-button {
+    opacity: 1;
+  }
+
+.photo__likes-button svg {
+  fill: #ffffff;
+}
+
+  .photo__wrapper--spaces {
+    position: relative;
+  }
+
+  .photo__wrapper--plants {
+    position: relative;
+  }
+
+  .photo__wrapper--road {
+    position: relative;
+  }
+
+  .photo__wrapper--bridge {
+    position: relative;
+  }
+
+  .photo__box-likes {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .photo__description {
+    color: #ffffff;
+  }
+}
